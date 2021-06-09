@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="logo.png" id="logo">           
+            
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>   
+            <a href="index.html">Home</a>        
+        </div>    
+    </header>
+
+    <form method="POST">
+        <div class="dialogo">
+            <div class="nome">
+                <label for="name">Nome</label>
+                <input id="name"  type="text" required />
+            </div>
+            
+            <div class="mensagem">
+                <label for="message">Mensagem</label>
+                <input id="message"  type="text" required />
+            </div>
+                           
+            <input class="input-btn" type="submit" value="Enviar" onclick="return addMessage()" />
+        </div>
+    </form>
+
+    <table id="response"></table>
+
+</body>
+
+<footer>
+
+   <div class="credito">
+        <input class="bnt-credito" type="button" value="Créditos" onclick="newpop()" />
+   </div> 
+
+</footer>
+</html>
